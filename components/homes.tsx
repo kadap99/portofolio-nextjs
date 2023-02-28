@@ -2,6 +2,7 @@
 import React from 'react'
 import { useTypewriter } from 'react-simple-typewriter'
 import { motion } from 'framer-motion';
+import { SocialIcon } from 'react-social-icons';
 type Props = {}
 
 export default function homes({}: Props) {
@@ -9,12 +10,13 @@ export default function homes({}: Props) {
     words: [
       "Saya adalah seorang Programmer, Guru, dan mekanik elekronik.",
     ],
+   
   })
   
 
   return (
-    <div className='bg-slate-800 h-screen text-teal-100'>
-      <div className='flex flex-col pt-48 items-center'>
+    
+      <div className='flex flex-col justify-center items-center h-screen bg-slate-800 text-gray-300'>
       
       <motion.div
       initial={{
@@ -32,8 +34,8 @@ export default function homes({}: Props) {
       }}
       
       className='text-center'>
-      <h2>Hallo nama saya,</h2>
-      <h1 className='text-lg font-bold text-teal-500'>M. HELMAN ANSYARI</h1>
+      <h2 className='lg:text-xl'>Hallo nama saya,</h2>
+      <h1 className='text-lg font-bold text-teal-500 lg:text-2xl'>M. HELMAN ANSYARI</h1>
       <p className='text-center'>{text}</p>
       </motion.div>
 
@@ -56,6 +58,5 @@ export default function homes({}: Props) {
           <img className='mt-3' src="5.png" alt="fotoprofil" />
         </motion.div>
       </div>
-    </div>
   )
 }

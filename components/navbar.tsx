@@ -30,7 +30,7 @@ export default function Navbar() {
         transition={{
           duration: 1,
         }}
-        className='text-xl font-bold text-teal-500 font-Poppins'>
+        className='text-xl font-bold text-teal-500 font-Poppins select-none'>
         TEKNOLOGIKA
         </motion.h1>
 
@@ -69,20 +69,20 @@ export default function Navbar() {
            duration: 1,
          }}
         
-        className='gap-5 hidden md:flex text-teal-500'>
-            <a href='https://google.com' target={'_blank'}  className='cursor-pointer'>Home</a>
-            <a href='https://google.com' target={'_blank'} className='cursor-pointer'>Profil</a>
-            <a href='https://google.com' target={'_blank'} className='cursor-pointer'>Resume</a>
-            <a href='https://google.com' target={'_blank'} className='cursor-pointer'>Social Media</a>
+        className='gap-5 hidden md:flex text-teal-500 '>
+            <a href='https://google.com' target={'_blank'}  className='cursor-pointer hover:text-white'>Home</a>
+            <a href='https://google.com' target={'_blank'} className='cursor-pointer hover:text-white'>Profil</a>
+            <a href='https://google.com' target={'_blank'} className='cursor-pointer hover:text-white'>Resume</a>
+            <a href='https://google.com' target={'_blank'} className='cursor-pointer hover:text-white'>Social Media</a>
         </motion.ul>
     </div>
-    <div className={`gap-5 ${isOpen ? 'transition ease-out duration-1000 opacity-100 transform translate-y-0' : 'transition ease-in duration-300 opacity-0 transform -translate-y-2 h-0' }`}>
-           <ul className='text-white bg-slate-800 py-2 font-Poppins font-bold px-3 md:hidden '>
-            <li className='hover:bg-white hover:text-teal-500 cursor-pointer rounded-sm hover:transition ease-in-out duration-300'>Home</li>
-            <li className='hover:bg-white hover:text-teal-500 cursor-pointer rounded-sm hover:transition ease-in-out duration-300'>Profil</li>
-            <li className='hover:bg-white hover:text-teal-500 cursor-pointer rounded-sm hover:transition ease-in-out duration-300'>Resume</li>
-            <li className='hover:bg-white hover:text-teal-500 cursor-pointer rounded-sm hover:transition ease-in-out duration-300'>Social Media</li>
-           </ul>
+    <div className={`gap-5   ${isOpen ? 'transition ease-out duration-1000 opacity-100 transform translate-y-0' : 'transition ease-in duration-300 opacity-0 transform -translate-y-2 h-0' }`}>
+           <div className='flex flex-col items-center text-white bg-slate-800 py-2 font-Poppins font-bold px-3 md:hidden '>
+            <a href='https://google.com' target={'_blank'} className='hover:bg-white hover:text-teal-500 cursor-pointer rounded-sm hover:transition ease-in-out duration-300'>Home</a>
+            <a href='https://google.com' target={'_blank'} className='hover:bg-white hover:text-teal-500 cursor-pointer rounded-sm hover:transition ease-in-out duration-300'>Profil</a>
+            <a href='https://google.com' target={'_blank'} className='hover:bg-white hover:text-teal-500 cursor-pointer rounded-sm hover:transition ease-in-out duration-300'>Resume</a>
+            <a href='https://google.com' target={'_blank'} className='hover:bg-white hover:text-teal-500 cursor-pointer rounded-sm hover:transition ease-in-out duration-300'>Social Media</a>
+           </div>
     </div>
     </div>
   )
