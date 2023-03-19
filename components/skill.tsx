@@ -7,7 +7,7 @@ type Props = {}
 
 export default function skill({}: Props) {
   return (
-    <div className='h-screen bg-slate-800 items-center justify-center text-center p-16 px-10'>
+    <div className='pt-10 h-screen bg-slate-800 items-center justify-center text-center p-16 px-10'>
     <motion.div 
     initial={{
       x: -200,
