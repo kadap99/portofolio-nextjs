@@ -46,7 +46,7 @@ export default function homes({}: Props) {
         </motion.div>
 
         
-        <div className=' '>
+        
         <div className=' flex justify-center items-center'>
         
 
@@ -72,9 +72,12 @@ export default function homes({}: Props) {
 
        
     </div>
-    </div>
 
-        
-      </div>
+    <div className='text-center text-gray-500 tracking-wider px-16 leading-8 md:px-56'>
+      Tempat/Tanggal lahir: Cempaka, 09-09-1997<br></br>
+      Alamat: Cempaka, Kampung hanyar, Jl Karya Mandiri, RT.041 RW.007 Kec. Cempaka, Kel. Cempaka Kota Banjarbaru
+    </div>
+    
+    </div>
   )
 }
